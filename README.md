@@ -17,7 +17,7 @@ PIL - Python Image Library
 ImageChops
 
 ## Example Output
-In order to run simply **"npm start"** (or *node server.js*) inside the base directory. This will fire up an express web server that you can access at http://localhost:9090. Pricing json is returned at the /json endpoint. For example, Opening up **http://localhost:9090/json/shu yun, the silent tempest** will return a json file like the following: 
+In order to run simply **"npm start"** (or *node server.js*) inside the base directory. This will fire up an express web server that you can access at http://localhost:9090. Pricing json is returned at the /json endpoint. For example, Opening up **http://localhost:9090/json/shu yun, the silent tempest** will return the following: 
 
 {"Shu Yun, the Silent Tempest": {"Fate Reforged (Foil)": {"NM/M": "1.99"}, "Fate Reforged": {"NM/M": "0.49"}}, "Shu Yun, the Silent Tempest (Fate Reforged)": {"Non-English Singles: Korean": {"NM/M": "0.99"}}, "Shu Yun, the Silent Tempest (Fate Reforged Prerelease)": {"Promotional Cards: Prerelease & Launch (Foil)": {"SP": "0.79", "NM/M": "0.99"}}}
 
