@@ -46,6 +46,6 @@ Each number that you see on the page is the *same image* but with different styl
 #### the moving parts:
 server.js -- an express web server to serve up the content from :
 
-cut_img.py -- a python script that grabs all of the relevant stuff and analyzes it to produce the output
+cut_img.py -- a python script that grabs all of the relevant stuff and analyzes it to produce the output. the true numbers are computed via root mean square comparisons to a ground truth version of the images.
 
 css2json.js -- a node script that converts the css to a parse-able json format
