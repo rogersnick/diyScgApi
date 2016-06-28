@@ -41,3 +41,11 @@ Each time you load a page, an image containing the digits one to nine is generat
 Along with this image, css is generated that describes how to display each number. Both of these are *different each time*. All numbers on the page are replaced with an image styled by the appropriate css. Some of the css is not even used. The image seems to expire. 
 
 Each number that you see on the page is the *same image* but with different styles applied - This causes only the relevant number to be shown. I'm not sure if this is an out of the box solution, or some kind of custom job. In order to reverse this process...well, check out the code.
+
+
+#### the moving parts:
+server.js -- an express web server to serve up the content from :
+
+cut_img.py -- a python script that grabs all of the relevant stuff and analyzes it to produce the output
+
+css2json.js -- a node script that converts the css to a parse-able json format
