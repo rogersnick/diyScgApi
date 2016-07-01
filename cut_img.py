@@ -158,7 +158,7 @@ for x in jsond["stylesheet"]["rules"]:
 						selectors_dictionary[selector]['bp-xval'] = xval
 						selectors_dictionary[selector]['bp-yval'] = yval
 					if y['property'] == 'background-image':
-						big_img_url = "https://"+str(y['value'][6:-1])
+						big_img_url = "http://"+str(y['value'][6:-1])
 						path = currentDirectory+"/img/price_icons.png"
 
 						myopener.retrieve(big_img_url, path)
