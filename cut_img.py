@@ -8,6 +8,7 @@ from urllib import FancyURLopener
 from PIL import Image
 from PIL import ImageChops
 import math
+from fake_useragent import UserAgent
 
 
 
@@ -120,9 +121,17 @@ search_term = 'Jeskai Ascendancy'
 #print sys.argv
 search_term = sys.argv[1]
 scgurl = 'http://sales.starcitygames.com/search.php?substring='+search_term
-html_doc = requests.get(scgurl)
+
+ua = UserAgent(cache=False)
+
+headers = {
+    'User-Agent': ua.random
+}
+
+html_doc = requests.get(scgurl, headers=headers)
 
 soup = BeautifulSoup(html_doc.text, "html.parser")
+
 css = soup.style
 cssurl = currentDirectory+"/css/scg_code.css"
 jsonurl = currentDirectory+"/css/scg_css.json"
