@@ -10,11 +10,7 @@ beautifulsoup4 (might have to **easy_install** this one depending on your setup)
 
 requests
 
-urllib
-
-PIL - Python Image Library
-
-ImageChops
+Pillow
 
 ## Example Output
 In order to run simply **"npm start"** (or *node server.js*) inside the base directory. This will fire up an express web server that you can access at http://localhost:9090. Pricing json is returned at the /json endpoint. For example, Opening up **http://localhost:9090/json/shu yun, the silent tempest** will return the following: 
